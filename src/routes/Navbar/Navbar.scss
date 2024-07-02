@@ -63,14 +63,30 @@
   }
 }
 
-.game-search {
-  padding: .5rem 1rem;
-  border-radius: 1rem;
+.search-container {
+  display: flex;
+  align-items: center;
   font-size: .9rem;
-  outline: none;
-  background: white;
-  border: none;
-  box-shadow: 0 0 2px lightgray;
+  gap: .5rem;
+  padding: .7rem .9rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+
+  .game-search {
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: width 0.8s;
+    background-color: transparent;
+    width: 400px;
+  }
+
+  img {
+    width: 20px;
+    cursor: pointer;
+  }
 }
 
 .cart-container {

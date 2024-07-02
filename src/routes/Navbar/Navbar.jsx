@@ -1,6 +1,7 @@
 import gamepadIcon from '../../assets/images/gamepad.png'
 import addIcon from '../../assets/images/add-button.png'
 import shoppingCartIcon from '../../assets/images/shopping-cart.png'
+import searchIcon from '../../assets/images/search.png'
 import { Link } from 'react-router-dom';
 import "./Navbar.scss";
 import { useState } from 'react';
@@ -17,12 +18,17 @@ const Navbar = () => {
         <h1>Game Haven</h1>
       </Link>
 
-      <input
-        type="text"
-        className="game-search"
-        name="game-search"
-        placeholder="Search for a game"
-      />
+      <div className="search-container">
+        <img src={searchIcon} alt="search icon" />
+        <input
+          type="text"
+          className="game-search"
+          name="game-search"
+          placeholder="Search for a game"
+        />
+
+      </div>
+
 
       <div className="dropdown-container">
         <button onClick={toggleDropdown}>Quick Navigation</button>
