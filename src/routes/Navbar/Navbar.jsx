@@ -23,22 +23,37 @@ const Navbar = () => {
         name="game-search"
         placeholder="Search for a game"
       />
-      
+
       <div className="dropdown-container">
         <button onClick={toggleDropdown}>Quick Navigation</button>
-        <div className={dropdown ? `active dropdown-content` : `dropdown-content`} >
-          <Link className="content">Play Dice</Link>
-          <Link className="content">Added Games</Link>
-          <Link className="content">Last 30 Days</Link>
-          <Link className="content">Best of the year</Link>
-          <Link className="content">All time top</Link>
+        <div
+          className={dropdown ? `active dropdown-content` : `dropdown-content`}
+        >
+          <Link className="content" onClick={() => setDropdown(false)}>
+            Play Dice
+          </Link>
+          <Link className="content" onClick={() => setDropdown(false)}>
+            Added Games
+          </Link>
+          <Link className="content" onClick={() => setDropdown(false)}>
+            Last 30 Days
+          </Link>
+          <Link className="content" onClick={() => setDropdown(false)}>
+            Best of the year
+          </Link>
+          <Link className="content" onClick={() => setDropdown(false)}>
+            All time top
+          </Link>
         </div>
       </div>
 
-
       <div className="cart-container">
-        <img src={addIcon} alt="add icon" className='add-game'/>
-        <img src={shoppingCartIcon} alt="shopping cart icon" className='see-cart'/>
+        <img src={addIcon} alt="add icon" className="add-game" />
+        <img
+          src={shoppingCartIcon}
+          alt="shopping cart icon"
+          className="see-cart"
+        />
       </div>
     </div>
   );

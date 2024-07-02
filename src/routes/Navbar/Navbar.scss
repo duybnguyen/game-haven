@@ -24,7 +24,7 @@
     background: transparent;
     border: 2px solid white;
     color: white;
-    padding: .3rem 1rem;
+    padding: .4rem 1.2rem;
     font-weight: bold;
     font-size: 1rem;
   }
@@ -45,11 +45,13 @@
       text-decoration: none;
       color: black;
       display: block;
-      padding: 1rem;
+      padding: .8rem;
+      font-weight: 500;
     }
 
     .content:hover {
-      background: gray;
+      background: rgb(15, 15, 15);
+      color: white;
       transition: .2s;
     }
   }
@@ -87,11 +89,6 @@
     transform: scale(1.1);
     transition: .2s;
   }
-
-  
-
-  
-
 }
 
 @keyframes dropdown {
