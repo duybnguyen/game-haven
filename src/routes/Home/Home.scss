@@ -1,0 +1,10 @@
+.home-container {
+  
+  #background-video {
+    z-index: -100;
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    object-fit: cover;
+  }
+}

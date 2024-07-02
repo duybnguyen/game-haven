@@ -1,0 +1,105 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  padding: 1rem 2rem;
+  align-items: center;
+  color: white;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  gap: .5rem;
+}
+
+.dropdown-container {
+  position: relative;
+  
+  button {
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: .3rem 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  button:hover {
+    background: white;
+    color: black;
+    transition: .3s;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    width: 100%;
+    
+    .content {
+      text-decoration: none;
+      color: black;
+      display: block;
+      padding: 1rem;
+    }
+
+    .content:hover {
+      background: gray;
+      transition: .2s;
+    }
+  }
+
+  .active {
+    animation: dropdown 300ms ease-in-out;
+    display: block;
+    transform-origin: top;
+  }
+}
+
+.game-search {
+  padding: .5rem 1rem;
+  border-radius: 1rem;
+  font-size: .9rem;
+  outline: none;
+  background: white;
+  border: none;
+  box-shadow: 0 0 2px lightgray;
+}
+
+.cart-container {
+  display: flex;
+  gap: 1.5rem;
+  border: 2px solid white;
+  padding: .5rem 1rem;
+  border-radius: 1rem;
+
+  img {
+    width: 30px;
+    cursor: pointer;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+    transition: .2s;
+  }
+
+  
+
+  
+
+}
+
+@keyframes dropdown {
+  0% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
