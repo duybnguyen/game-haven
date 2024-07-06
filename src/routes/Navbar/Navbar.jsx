@@ -8,7 +8,12 @@ import { useState } from 'react';
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false)
+  const [search, setSearch] = useState('')
 
+  const handleSearch = e => {
+    setSearch(e.target.value)
+  }
+  
   const toggleDropdown = () => setDropdown(prev => !prev)
 
   return (
@@ -25,6 +30,8 @@ const Navbar = () => {
           className="game-search"
           name="game-search"
           placeholder="Search for a game"
+          value={search}
+          onChange={handleSearch}
         />
 
       </div>

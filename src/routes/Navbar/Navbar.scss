@@ -6,6 +6,7 @@
   padding: 1rem 2rem;
   align-items: center;
   color: white;
+  gap: 1rem;
 }
 
 .icon-container {
@@ -80,6 +81,10 @@
     font-weight: 500;
     transition: width 0.8s;
     background-color: transparent;
+    width: 250px;
+  }
+
+  .game-search:focus {
     width: 400px;
   }
 
