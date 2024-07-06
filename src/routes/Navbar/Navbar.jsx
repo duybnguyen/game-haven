@@ -35,7 +35,7 @@ const Navbar = () => {
         <div
           className={dropdown ? `active dropdown-content` : `dropdown-content`}
         >
-          <Link className="content" onClick={() => setDropdown(false)}>
+          <Link className="content" onClick={() => setDropdown(false)} to="/play-dice">
             Play Dice
           </Link>
           <Link className="content" onClick={() => setDropdown(false)}>
